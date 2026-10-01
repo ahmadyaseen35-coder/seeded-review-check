@@ -6,7 +6,7 @@ The tool plants a known defect in a small piece of code, shows it to your review
 
 ## Why
 
-In one small experiment, the same model with the same prompt named a seeded defect 9 times in 10 when shown a diff, and 0 times in 10 when shown raw source. The arms differed in presentation and, for seven of the ten valid diff runs, also in a harness flag; a small control with the flag off still named it in 2 of 3 runs. That is a pattern worth checking, not proof. Details and limits: [POST LINK]. The cases here are new and different from that experiment's material, so you can check your own reviewer without reusing it.
+In one small experiment, the same model with the same prompt named a seeded defect 9 times in 10 when shown a diff, and 0 times in 10 when shown raw source. The arms differed in presentation and, for seven of the ten valid diff runs, also in a harness flag; a small control with the flag off still named it in 2 of 3 runs. Only 1 of the 9 named it without hedging, and the harness accepted none. That is a pattern worth checking, not proof. Details and limits: [POST LINK]. The cases here are new and different from that experiment's material, so you can check your own reviewer without reusing it.
 
 ## Limits
 
@@ -58,7 +58,7 @@ Check the tool itself with `node selftest.js` (uses fake reviewers, no network).
 
 ## Share your result
 
-If you run it, open an issue with your table (model, version, runs). I will collect results across models in a follow-up post.
+If you run it, open a ["Reviewer result" issue](../../issues/new?template=reviewer-result.md) with your reviewer and version, settings and per-case counts. Misses, crashes and "no difference" are useful results too. Results will be collected across models in a follow-up post, crediting contributors who want attribution.
 
 ## License
 
