@@ -1,0 +1,16 @@
+{
+  "id": "invoice-edit-permission",
+  "title": "Invoice edit permission with an inverted role check",
+  "instruction": "Review this code and list any defects you find.",
+  "mechanism": [
+    "invert",
+    "negat",
+    "![ ]*EDIT_ROLES",
+    "(reversed|backwards?|opposite)",
+    "everyone (else|but)",
+    "non-?(admin|accountant|privileged)",
+    "(admins?|accountants?)[a-z ]{0,30}(cannot|can.t|are (blocked|denied)|lose)",
+    "(visitors?|viewers?|other roles?|any other user) (can|may|are allowed)"
+  ],
+  "defect": "The role check is negated, so every user except admin and accountant may edit any open invoice."
+}

@@ -1,0 +1,20 @@
+diff --git a/code.js b/code.js
+--- a/code.js
++++ b/code.js
+@@ -1,11 +1,14 @@
+ // Query helper for the orders table. Every query is scoped to one tenant.
+ function findOrders(db, tenantId, { status, customerId } = {}) {
+-  const args = [tenantId];
+-  const where = ['tenant_id = $1'];
++  const args = [];
++  const where = [];
+ 
+   if (customerId) {
+     args.push(customerId);
+     where.push(`customer_id = $${args.length}`);
++  } else {
++    args.push(tenantId);
++    where.push(`tenant_id = $${args.length}`);
+   }
+   if (status) {
+     args.push(status);

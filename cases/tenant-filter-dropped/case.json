@@ -1,0 +1,14 @@
+{
+  "id": "tenant-filter-dropped",
+  "title": "Query helper that drops the tenant filter when customerId is passed",
+  "instruction": "Review this code and list any defects you find.",
+  "mechanism": [
+    "tenant.{0,60}(drop|missing|omit|skip|bypass|not (applied|added|included)|only (added|applied) when)",
+    "cross-tenant",
+    "(leak|expos)[a-z]* .{0,40}(other|another) (tenant|customer|compan)",
+    "isolation",
+    "tenant_?id (is |are )?(absent|missing|omitted|gone)",
+    "only (contains? |has |filters? (on|by) )?customer_id"
+  ],
+  "defect": "When customerId is passed, the tenant_id condition is never added, so rows from other tenants can be returned."
+}

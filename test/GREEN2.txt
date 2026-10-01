@@ -1,0 +1,15 @@
+PASS never: tool exits 0
+PASS never: 3 cases, 0 candidates, 3 valid per presentation
+PASS never: disclaimer line printed verbatim
+PASS never: summary.md and 18 output files written
+PASS diff-only: diff 3/3 and raw 0/3 in every case
+PASS crash: every run is NO DATA, valid 0, named 0
+PASS deny: a reviewer that only denies has 0 candidates
+PASS positive: three plain diagnoses give 3/3 in every cell
+PASS ansi: diagnoses split by escape codes score 3/3
+PASS quoting: reviewer path containing an apostrophe runs
+PASS --timeout above 2147483.647 is rejected
+PASS --case selects one case
+PASS timeout: counted as NO DATA
+
+SELFTEST GREEN

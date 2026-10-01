@@ -1,0 +1,52 @@
+PASS never: tool exits 0
+FAIL never: 3 cases, 0 candidates, 3 valid per presentation :: {"reviewer":"\"node\" \"<repo>\\\\test\\\\never.js\"","runs":3,"cases":[{"id":"invoice-edit-permission","title":"Invoice edit permission with an inverted role check","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":0,"valid":3,"nodata":0}},{"id":"pagination-offset","title":"Pagination offset that skips one row per page","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":0,"valid":3,"nodata":0}},{"id":"tenant-filter-dropped","title":"Query helper that drops the tenant filter when customerId is passed","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":0,"valid":3,"nodata":0}}]}
+FAIL never: disclaimer line printed verbatim :: missing
+PASS never: summary.md and 18 output files written
+FAIL diff-only: diff 3/3 and raw 0/3 in every case :: {"reviewer":"\"node\" \"<repo>\\\\test\\\\diff-only.js\"","runs":3,"cases":[{"id":"invoice-edit-permission","title":"Invoice edit permission with an inverted role check","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":3,"valid":3,"nodata":0}},{"id":"pagination-offset","title":"Pagination offset that skips one row per page","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":3,"valid":3,"nodata":0}},{"id":"tenant-filter-dropped","title":"Query helper that drops the tenant filter when customerId is passed","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":3,"valid":3,"nodata":0}}]}
+FAIL crash: every run is NO DATA, valid 0, named 0 :: {"reviewer":"\"node\" \"<repo>\\\\test\\\\crash.js\"","runs":3,"cases":[{"id":"invoice-edit-permission","title":"Invoice edit permission with an inverted role check","raw":{"named":0,"valid":0,"nodata":3},"diff":{"named":0,"valid":0,"nodata":3}},{"id":"pagination-offset","title":"Pagination offset that skips one row per page","raw":{"named":0,"valid":0,"nodata":3},"diff":{"named":0,"valid":0,"nodata":3}},{"id":"tenant-filter-dropped","title":"Query helper that drops the tenant filter when customerId is passed","raw":{"named":0,"valid":0,"nodata":3},"diff":{"named":0,"valid":0,"nodata":3}}]}
+FAIL deny: a reviewer that only denies has 0 candidates :: {"reviewer":"\"node\" \"<repo>\\\\test\\\\deny.js\"","runs":3,"cases":[{"id":"invoice-edit-permission","title":"Invoice edit permission with an inverted role check","raw":{"named":3,"valid":3,"nodata":0},"diff":{"named":3,"valid":3,"nodata":0}},{"id":"pagination-offset","title":"Pagination offset that skips one row per page","raw":{"named":3,"valid":3,"nodata":0},"diff":{"named":3,"valid":3,"nodata":0}},{"id":"tenant-filter-dropped","title":"Query helper that drops the tenant filter when customerId is passed","raw":{"named":3,"valid":3,"nodata":0},"diff":{"named":3,"valid":3,"nodata":0}}]}
+FAIL positive: three plain diagnoses give 3/3 in every cell :: {"reviewer":"\"node\" \"<repo>\\\\test\\\\positive.js\"","runs":3,"cases":[{"id":"invoice-edit-permission","title":"Invoice edit permission with an inverted role check","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":0,"valid":3,"nodata":0}},{"id":"pagination-offset","title":"Pagination offset that skips one row per page","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":0,"valid":3,"nodata":0}},{"id":"tenant-filter-dropped","title":"Query helper that drops the tenant filter when customerId is passed","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":0,"valid":3,"nodata":0}}]}
+FAIL ansi: diagnoses split by escape codes score 3/3 :: {"reviewer":"\"node\" \"<repo>\\\\test\\\\ansi.js\"","runs":3,"cases":[{"id":"invoice-edit-permission","title":"Invoice edit permission with an inverted role check","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":0,"valid":3,"nodata":0}},{"id":"pagination-offset","title":"Pagination offset that skips one row per page","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":0,"valid":3,"nodata":0}},{"id":"tenant-filter-dropped","title":"Query helper that drops the tenant filter when customerId is passed","raw":{"named":0,"valid":3,"nodata":0},"diff":{"named":0,"valid":3,"nodata":0}}]}
+PASS quoting: reviewer path containing an apostrophe runs
+FAIL --timeout above 2147483.647 is rejected :: 0(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+(node:43548) TimeoutOverflowWarning: 9999999000 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+
+PASS --case selects one case
+PASS timeout: counted as NO DATA
+
+SELFTEST RED (8 failed)

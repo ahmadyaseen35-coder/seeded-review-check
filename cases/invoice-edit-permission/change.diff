@@ -1,0 +1,12 @@
+diff --git a/code.js b/code.js
+--- a/code.js
++++ b/code.js
+@@ -4,7 +4,7 @@ const EDIT_ROLES = ['admin', 'accountant'];
+ function canEditInvoice(user, invoice) {
+   if (!user || !invoice) return false;
+   if (invoice.status === 'paid' || invoice.status === 'void') return false;
+-  if (EDIT_ROLES.includes(user.role)) return true;
++  if (!EDIT_ROLES.includes(user.role)) return true;
+   // Everyone else may only touch their own drafts.
+   return invoice.createdBy === user.id && invoice.status === 'draft';
+ }

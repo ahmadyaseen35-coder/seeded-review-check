@@ -1,0 +1,10 @@
+PASS never: tool exits 0
+PASS never: 3 cases, 0 named, 3 valid per presentation
+PASS never: disclaimer line printed verbatim
+PASS never: summary.md and 18 output files written
+PASS diff-only: diff 3/3 and raw 0/3 in every case
+PASS crash: every run is NO DATA, valid 0, named 0
+PASS --case selects one case
+PASS timeout: counted as NO DATA
+
+SELFTEST GREEN

@@ -1,0 +1,15 @@
+{
+  "id": "pagination-offset",
+  "title": "Pagination offset shifted forward by one row",
+  "instruction": "Review this code and list any defects you find.",
+  "mechanism": [
+    "off[- ]by[- ]one",
+    "skips? (the |a |one |1 )?(first |row|record|item)",
+    "[+] ?1",
+    "(drops?|misses|omits?|omitting) (the |a |one )?(first )?(row|record|item|result)",
+    "extra (increment|offset|plus|one|[+])",
+    "remove the extra",
+    "shift"
+  ],
+  "defect": "The extra + 1 shifts every page forward, omitting the first result overall."
+}
