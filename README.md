@@ -6,7 +6,7 @@ The tool plants a known defect in a small piece of code, shows it to your review
 
 ## Why
 
-In one small experiment, the same model with the same prompt named a seeded defect 9 times in 10 when shown a diff, and 0 times in 10 when shown raw source. The arms differed in presentation and, for seven of the ten valid diff runs, also in a harness flag; a small control with the flag off still named it in 2 of 3 runs. Only 1 of the 9 named it without hedging, and the harness accepted none. That is a pattern worth checking, not proof. Details and limits: [POST LINK]. The cases here are new and different from that experiment's material, so you can check your own reviewer without reusing it.
+In one small experiment, the same model with the same prompt named a seeded defect 9 times in 10 when shown a diff, and 0 times in 10 when shown raw source. The arms differed in presentation and, for seven of the ten valid diff runs, also in a harness flag; a small control with the flag off still named it in 2 of 3 runs. Only 1 of the 9 named it without hedging, and the harness accepted none. That is a pattern worth checking, not proof. Details and limits: [the write-up](https://dev.to/ahmadammar/my-ai-reviewer-named-the-bug-9-of-10-times-in-a-diff-and-0-of-10-in-raw-source-here-is-why-that-is-57mp). The cases here are new and different from that experiment's material, so you can check your own reviewer without reusing it.
 
 ## Limits
 
